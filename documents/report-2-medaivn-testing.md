@@ -137,8 +137,22 @@ If no reproducible defect is found, replace the table content with:
 `No reproducible defect was identified within the executed testing scope.`
 
 This statement does not prove that the website contains no defects. It only describes the result of the completed Test Cases.
+## 9. Testing Evidence
 
-## 9. Limitations
+The following evidence was collected during actual Manual Testing of the Med-AI website.
+
+| Evidence | Related Test Case | Purpose |
+|---|---|---|
+| [Homepage](../screenshots/TC-01-homepage.png) | TC-01 | Proves that the Med-AI homepage was accessed successfully |
+| [Valid Herb Search](../screenshots/TC-04-herb-search-gung.png) | TC-04 | Shows the keyword `Gừng` and the actual search result |
+| [Empty Search Validation](../screenshots/TC-05-empty-search.png) | TC-05 | Shows how the system handled an empty search request |
+| [Chatbot Response](../screenshots/TC-07-chatbot-response.png) | TC-07 | Shows the submitted question and the chatbot response |
+| [Mobile Interface](../screenshots/TC-13-mobile-412x915.png) | TC-13 | Shows the website at the 412 x 915 mobile viewport |
+| [Invalid Page Handling](../screenshots/TC-15-invalid-page.png) | TC-15 | Shows how the system handled a nonexistent page |
+
+All screenshots were captured by the student during actual test execution. No real patient information was used.
+
+## 10. Limitations
 
 The testing process had the following limitations:
 
@@ -149,7 +163,7 @@ The testing process had the following limitations:
 5. Penetration Testing was not performed.
 6. Performance Testing with multiple users was not performed.
 7. Artificial Intelligence responses may vary between executions.
-## 10. Conclusion
+## 11. Conclusion
 
 A total of 15 Test Cases were executed on the Med-AI website. All 15 Test Cases passed, with no failed, blocked, or unexecuted Test Cases. The recorded Pass Rate was 100%.
 
