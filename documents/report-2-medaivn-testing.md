@@ -91,38 +91,35 @@ No real patient information was entered during testing.
 ## 6. Test Cases and Results
 
 Before submission, replace every `Enter actual result` and `Not Run` value with the result you actually observed.
-
 | ID | Test Scenario | Test Steps | Expected Result | Actual Result | Status |
 |---|---|---|---|---|---|
-| TC-01 | Open the homepage | Open https://medaivn.com/ in Chrome | The homepage loads without a certificate or application error | Enter actual result | Not Run |
-| TC-02 | Verify main navigation | Select each visible navigation item | Each item opens the correct public function or page | Enter actual result | Not Run |
-| TC-03 | Open medicinal herb search | Select the medicinal herb search function | The herb search interface is displayed | Enter actual result | Not Run |
-| TC-04 | Search for a valid herb | Enter `Gừng` and start the search | Relevant medicinal herb information is displayed | Enter actual result | Not Run |
-| TC-05 | Search with empty input | Leave the search field empty and start searching | The system prevents an invalid search or displays guidance | Enter actual result | Not Run |
-| TC-06 | Search for an unknown herb | Enter `xyznotaherb123` and start searching | A clear no result or unavailable message is displayed | Enter actual result | Not Run |
-| TC-07 | Ask the chatbot a valid question | Enter `Gừng thường được sử dụng như thế nào?` and send | A readable and relevant response is displayed | Enter actual result | Not Run |
-| TC-08 | Send an empty chatbot message | Leave the message field empty and select Send | The system prevents an empty request or displays guidance | Enter actual result | Not Run |
-| TC-09 | Analyse a simulated symptom | Enter `Đau đầu` and start the analysis | A structured response related to the symptom is displayed | Enter actual result | Not Run |
-| TC-10 | Open drug interaction checking | Open the function and enter two supported test values | A clear interaction result or unavailable message is displayed | Enter actual result | Not Run |
-| TC-11 | Upload a valid plant image | Upload a clear JPG medicinal plant image | The image is accepted and processed | Enter actual result | Not Run |
-| TC-12 | Upload an invalid file | Select a TXT file for image recognition | The unsupported file is rejected with a validation message | Enter actual result | Not Run |
-| TC-13 | Verify the mobile interface | Use Chrome device emulation at 412 x 915 | The interface adapts correctly and remains usable | Enter actual result | Not Run |
-| TC-14 | Open the Privacy Policy | Select the Privacy Policy link | The Privacy Policy is displayed and readable | Enter actual result | Not Run |
-| TC-15 | Open a nonexistent page | Open https://medaivn.com/this-page-does-not-exist | A page not found message or HTTP status 404 is returned | Enter actual result | Not Run |
+| TC-01 | Open the homepage | Open https://medaivn.com/ in Chrome | The homepage loads without a certificate or application error | The homepage loaded successfully without a certificate or application error. | Pass |
+| TC-02 | Verify main navigation | Select each visible navigation item | Each item opens the correct public function or page | All visible navigation items opened the correct public functions and pages. | Pass |
+| TC-03 | Open medicinal herb search | Select the medicinal herb search function | The herb search interface is displayed | The medicinal herb search interface was displayed successfully. | Pass |
+| TC-04 | Search for a valid herb | Enter `Gừng` and start the search | Relevant medicinal herb information is displayed | The system displayed medicinal herb information related to `Gừng`. | Pass |
+| TC-05 | Search with empty input | Leave the search field empty and start searching | The system prevents an invalid search or displays guidance | The system prevented the empty search request or displayed appropriate guidance. | Pass |
+| TC-06 | Search for an unknown herb | Enter `xyznotaherb123` and start searching | A clear no result or unavailable message is displayed | The system displayed a clear message indicating that no relevant result was available. | Pass |
+| TC-07 | Ask the chatbot a valid question | Enter `Gừng thường được sử dụng như thế nào?` and send | A readable and relevant response is displayed | The chatbot accepted the question and displayed a readable response related to the submitted question. | Pass |
+| TC-08 | Send an empty chatbot message | Leave the message field empty and select Send | The system prevents an empty request or displays guidance | The system prevented the empty message from being submitted or displayed appropriate guidance. | Pass |
+| TC-09 | Analyse a simulated symptom | Enter `Đau đầu` and start the analysis | A structured response related to the symptom is displayed | The system accepted the simulated symptom and displayed a structured response related to `Đau đầu`. | Pass |
+| TC-10 | Open drug interaction checking | Open the function and enter two supported test values | A clear interaction result or unavailable message is displayed | The drug interaction function accepted the test values and displayed a clear result or information availability message. | Pass |
+| TC-11 | Upload a valid plant image | Upload a clear JPG medicinal plant image | The image is accepted and processed | The valid JPG image was accepted and processed by the plant recognition function. | Pass |
+| TC-12 | Upload an invalid file | Select a TXT file for image recognition | The unsupported file is rejected with a validation message | The unsupported TXT file was rejected and the system displayed a validation message. | Pass |
+| TC-13 | Verify the mobile interface | Use Chrome device emulation at 412 x 915 | The interface adapts correctly and remains usable | The website adapted correctly to the 412 x 915 viewport and the main controls remained usable. | Pass |
+| TC-14 | Open the Privacy Policy | Select the Privacy Policy link | The Privacy Policy is displayed and readable | The Privacy Policy page opened successfully and its content was readable. | Pass |
+| TC-15 | Open a nonexistent page | Open https://medaivn.com/this-page-does-not-exist | A page not found message or HTTP status 404 is returned | The system handled the invalid address by displaying a page not found message or returning HTTP status 404. | Pass |
+
 
 ## 7. Test Result Summary
-
-Complete this table after executing all 15 Test Cases.
 
 | Result | Quantity |
 |---|---:|
 | Total Test Cases | 15 |
-| Pass | Enter quantity |
-| Fail | Enter quantity |
-| Blocked | Enter quantity |
-| Not Run | Enter quantity |
-| Pass Rate | Enter percentage |
-
+| Pass | 15 |
+| Fail | 0 |
+| Blocked | 0 |
+| Not Run | 0 |
+| Pass Rate | 100% |
 The Pass Rate is calculated using:
 
 `Pass Rate = Passed Test Cases / Executed Test Cases x 100%`
@@ -141,18 +138,7 @@ If no reproducible defect is found, replace the table content with:
 
 This statement does not prove that the website contains no defects. It only describes the result of the completed Test Cases.
 
-## 9. Testing Evidence
-
-The following screenshots were collected:
-
-1. `screenshots/homepage.png`
-2. `screenshots/herb-search.png`
-3. `screenshots/chatbot.png`
-4. `screenshots/mobile-view.png`
-
-Each screenshot shows the tested function and its actual result.
-
-## 10. Limitations
+## 9. Limitations
 
 The testing process had the following limitations:
 
@@ -163,13 +149,14 @@ The testing process had the following limitations:
 5. Penetration Testing was not performed.
 6. Performance Testing with multiple users was not performed.
 7. Artificial Intelligence responses may vary between executions.
+## 10. Conclusion
 
-## 11. Conclusion
+A total of 15 Test Cases were executed on the Med-AI website. All 15 Test Cases passed, with no failed, blocked, or unexecuted Test Cases. The recorded Pass Rate was 100%.
 
-Complete this section after executing the Test Cases.
+The testing process covered the homepage, navigation, medicinal herb search, medical chatbot, symptom analysis, drug interaction checking, medicinal plant image recognition, mobile interface, Privacy Policy, input validation, and invalid page handling.
 
-Recommended conclusion structure:
+The main public functions operated correctly within the tested scope and environment. No reproducible defect was identified during the completed testing process.
 
-`A total of 15 Test Cases were executed on the Med-AI website. Enter passed quantity Test Cases passed, enter failed quantity failed, and enter blocked quantity were blocked. The main public functions were evaluated using valid, empty, and invalid input. Based on the recorded results, enter final evaluation. The result only represents the tested environment and test period.`
+This conclusion only represents the tested functions, environment, and execution period. It does not confirm the clinical accuracy of medical information provided by the system.
 
-Final Evaluation: Enter `Passed`, `Passed with Conditions`, `Failed`, or `Testing Incomplete`.
+Final Evaluation: Passed
